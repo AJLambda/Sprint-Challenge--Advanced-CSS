@@ -1,7 +1,6 @@
 // Mixins Here
 
 .custom-button(@width: 200px, @btn-bg-color: black, @font-color: white, @padding: 2% 4%) {
-  
     color: @font-color;
     background-color: @btn-bg-color;
     text-align: center;
@@ -10,6 +9,11 @@
     width: @width;
     font-size: 1.8rem;
     border-radius: 5px;
+
+    :hover {
+        color: @btn-bg-color;
+        background-color: @font-color;
+    }
   }
 
 .flex1 {
